@@ -54,8 +54,8 @@ object VaadinPlugin extends Plugin with VaadinKeys {
   )
 
   val vaadinWebSettings = vaadinSettings ++ Seq(
-    resourceGenerators in Compile <+= CompileWidgetsetsTask.compileWidgetsetsInResourceGeneratorsTask,
-    resourceGenerators in Compile <+= compileVaadinThemes
+    resourceGenerators in Compile += CompileWidgetsetsTask.compileWidgetsetsInResourceGeneratorsTask.taskValue,
+    resourceGenerators in Compile += compileVaadinThemes.taskValue
   )
 
 }

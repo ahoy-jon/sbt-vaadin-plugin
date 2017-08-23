@@ -8,7 +8,7 @@ organization := "org.vaadin.sbt"
 
 sbtPlugin := true
 
-sbtVersion in Global := "0.13.9"
+sbtVersion in Global := "0.13.16"
 
 scalaVersion in Global := "2.10.6"
 
@@ -26,5 +26,5 @@ ScriptedPlugin.scriptedSettings
 scriptedBufferLog := false
 
 scriptedLaunchOpts := { scriptedLaunchOpts.value ++
-  Seq("-Dplugin.version=" + version.value, "-Dvaadin.version=7.5.7")
+  Seq("-Dplugin.version=" + version.value, "-Dvaadin.version=8.1.1")
 }
